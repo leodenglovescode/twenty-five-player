@@ -1,8 +1,23 @@
 # Twenty Five
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-6b7b58?style=flat-square)](LICENSE)
+[![Vanilla JavaScript](https://img.shields.io/badge/JavaScript-vanilla-f7df1e?style=flat-square&logo=javascript&logoColor=black)](app.js)
+[![No build step](https://img.shields.io/badge/build-no%20step-6b7b58?style=flat-square)](#run)
+
 An independently built browser tribute to the original 2001 iPod, made with
 HTML, CSS, and JavaScript. Includes a CSS-drawn enclosure, scroll-wheel controls,
 local audio playback, and three original synthesized demo tracks.
+
+## Screenshots
+
+![Twenty Five desktop player with its scroll wheel and monochrome display](docs/screenshots/player.jpg)
+
+<details>
+<summary>Immersion mode</summary>
+
+![Twenty Five in immersion mode, with only the player and its shadow visible](docs/screenshots/immersion.jpg)
+
+</details>
 
 ## Run
 
