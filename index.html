@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An independently built browser tribute to the original 2001 iPod.">
+<title>Twenty Five — browser music player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead"><a href="./" class="wordmark">TWENTY FIVE<span>2001 — 2026</span></a><div class="header-actions"><span class="edition">A SCROLL-WHEEL TRIBUTE</span><button type="button" id="immersion" aria-pressed="false">Immersion mode</button></div></header>
+<main>
+<section class="intro"><p class="eyebrow">OCTOBER 23, 2001</p><h1>A thousand songs.<br>A million memories.</h1><p class="lede">That first turn of the wheel.<br>Twenty-five years later, it still feels right.</p><div class="actions"><label class="load" for="music-files">Add your music <span>↗</span></label><input id="music-files" type="file" accept="audio/*,.mp3,.m4a,.wav,.ogg,.flac" multiple><button id="demo" class="text-button">Play the demo <span>▷</span></button></div><p class="file-note">Your files stay in this browser tab.</p><div class="instructions"><p><span>01</span> Trace a circle around the wheel to scroll.</p><p><span>02</span> Press the center to choose. Menu takes you back.</p><p><span>03</span> Or use ↑ ↓, Enter, Esc and Space.</p></div><p class="status" id="status" role="status" aria-live="polite">Three original demo tracks are ready to play.</p></section>
+<section class="stage" aria-label="Interactive music player">
+<div class="ground-shadow"></div>
+<div class="device" id="device" tabindex="0" aria-label="Scroll-wheel music player. Use up and down to navigate, Enter to select, Escape for Menu, Space to play or pause.">
+<div class="top-edge"><span class="headphone"></span><button id="hold" aria-pressed="false" aria-label="Hold switch"><span></span></button><span class="hold-label">HOLD</span></div>
+<div class="body-face">
+<div class="screen-bezel"><div id="screen" class="screen" aria-label="Player display"><div class="screen-bar"><span id="play-state" aria-hidden="true"></span><strong id="screen-title">Twenty Five</strong><span class="battery" aria-label="Decorative full battery"><i></i></span></div><div id="screen-content"></div><div class="scanlines" aria-hidden="true"></div></div></div>
+<div class="controls"><button class="physical menu" id="menu" aria-label="Menu"><span>menu</span></button><button class="physical previous" id="previous" aria-label="Previous track"><span><svg viewBox="0 0 26 18" aria-hidden="true"><path d="M2 3h3v12H2zM5 9l9-6v12zM14 9l9-6v12z"/></svg></span></button><button class="physical next" id="next" aria-label="Next track"><span><svg viewBox="0 0 26 18" aria-hidden="true"><path d="M24 3h-3v12h3zM21 9l-9-6v12zM12 9L3 3v12z"/></svg></span></button><button class="physical play" id="play" aria-label="Play or pause"><span><svg viewBox="0 0 29 18" aria-hidden="true"><path d="M3 3l9 6-9 6zM17 3h4v12h-4zM24 3h4v12h-4z"/></svg></span></button><svg class="ring-seams" viewBox="0 0 278 278" aria-hidden="true"><path d="M41 41l20 20M217 61l20-20M217 217l20 20M61 217l-20 20"/></svg><div class="wheel" id="wheel" aria-label="Scroll wheel"><div class="wheel-grain"></div><button id="select" class="select" aria-label="Select"></button></div></div>
+<div class="bottom-edge"></div></div><div class="hold-overlay" id="hold-overlay" hidden>HOLD</div>
+</div>
+<p class="device-caption"><span class="dot"></span> INDEPENDENTLY BUILT. STILL A LITTLE MAGICAL.</p>
+</section>
+</main>
+<footer><p>A personal tribute to the original iPod. Not affiliated with or endorsed by Apple.</p><p>Original player code & demo audio. Open-source display font. <a href="README.md">About this project ↗</a></p></footer>
+<button type="button" id="immersion-exit" aria-label="Exit immersion mode" title="Exit immersion (Esc)" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+<audio id="audio" preload="metadata"></audio>
+<script type="module" src="app.js"></script>
+</body></html>
